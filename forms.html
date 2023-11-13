@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Azubi assignment">
+  <meta name="keywords" content="HTML, CSS">
+  <meta name="author" content="Emmanuel">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./icons/ie.ico">
+  <title>Personal Information</title>
+  <style>
+    label, input {
+        margin-bottom: 20px;
+    }
+    fieldset{
+        width: 500px;
+        margin:20px auto auto auto;
+        border-radius: 20px;
+    }
+    button[type="submit"] {
+        height: 40px;
+        width: 460px;
+        text-align: center;
+    }
+  </style>
+</head>
+<body>
+    <form action="_self" method="post">
+        <fieldset>
+            <legend>Basic information</legend>
+
+            <label for="firstName"> First Name </label>
+            <input type="text" id="firstName" name="firstName" required> <br>
+
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" required> <br>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required> <br>
+
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" required> <br>
+
+            <label for="dateOfBirth">Date Of Birth</label>
+            <input type="date" name="dateOfBirth" id="dateOfBirth" required> <br>
+
+            <label for="phoneNumber">Phone Number</label>
+            <input type="tel" name="phoneNumber" id="phoneNumber" required> <br>
+
+            <label for="country"> Country of residence</label>
+            <select name="Country" id="Country" required>
+                <option disabled selected>Select your country of residence</option>
+                <option value="Rwanda">Rwanda</option>
+                <option value="Ghana">Ghana</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="South Africa">South Africa</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Uganda">Uganda</option>
+                <option value="Ethiopia">Ethiopia</option>
+                <option value="Egypt">Egypt</option>
+                <option value="Tanzania">Tanzania</option>
+                <option value="Senegal">Senegal</option>
+                <option value="Zambia">Zambia</option>
+
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend> User's interests</legend>
+
+            <h3>Select your gender</h3>
+
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+
+            <h4>Select your hobies</h4>
+
+            <input type="checkbox" name="hoby" id="music" value="music">
+            <label for="music">Music</label>
+
+            <input type="checkbox" name="hoby" id="sport" value="sport">
+            <label for="sport">Sport</label>
+
+            <input type="checkbox" name="hoby" id="dancing" value="dancing">
+            <label for="dancing">Dancing</label>
+
+            <input type="checkbox" name="hoby" id="reading" value="reading">
+            <label for="reading">Reading</label>
+
+            <input type="checkbox" name="hoby" id="travel" value="travel">
+            <label for="travel">Travel</label>
+            <h4>Feedback</h4>
+            <label for="feedback">Type in your feedback</label> <br>
+            <textarea name="feedback" id="feedback" cols="60" rows="10"></textarea>
+            <button type="submit" >Submit the form</button>
+        </fieldset>
+        
+    </form>
+
+</body>
+</html>
